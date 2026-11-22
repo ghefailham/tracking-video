@@ -19,7 +19,7 @@
   // Authorization callback (Login Kit redirect URI).
   // TikTok sends ?code=...&state=... here; this page forwards them to the company's Google Apps Script web app,
   // which exchanges the code for an access token and stores it privately. Nothing is stored in this website.
-  var WEB_APP_URL = ''; // diisi pada tahap 2 (URL web app Apps Script Tracking Video)
+  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzkgAqufnthfVKxnM2AH9qIpslLp2NGfWM7Y7mzgKKhIRx6M7q4suqL6PssglB7bYNb5A/exec';
 
   var q = new URLSearchParams(location.search);
   var el = document.getElementById('pesan');
