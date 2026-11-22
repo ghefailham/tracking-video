@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracking Video Raf Estate</title>
+<link rel="icon" href="icon.jpg">
+<style>
+  body { font-family: Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; color: #202124; line-height: 1.6; background: #fff; }
+  header { display: flex; align-items: center; gap: 16px; }
+  header img { width: 72px; height: 72px; border-radius: 16px; }
+  h1 { margin: 0; font-size: 26px; }
+  .muted { color: #5f6368; }
+  nav a { margin-right: 16px; }
+  footer { margin-top: 40px; font-size: 13px; color: #5f6368; border-top: 1px solid #eee; padding-top: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon.jpg" alt="Tracking Video Raf Estate icon">
+  <div>
+    <h1>Tracking Video Raf Estate</h1>
+    <div class="muted">Internal video performance tracker for PT Raf Estate</div>
+  </div>
+</header>
+
+<h2>What it does</h2>
+<p>Tracking Video Raf Estate is an internal analytics tool used by the marketing team of PT Raf Estate, a property company in Malang, Indonesia.
+It records the daily performance of videos published on the company's own social media accounts (TikTok, YouTube, Instagram and Facebook)
+in a private Google Sheet, so the team can see which videos, upload days and upload times perform best.</p>
+
+<h2>How it uses TikTok</h2>
+<ol>
+  <li>The owner of a company TikTok account signs in with <b>Login Kit</b> and approves access.</li>
+  <li>The tool reads the account's basic profile (<code>user.info.basic</code>) and its list of public videos with their statistics
+      — views, likes, comments and shares (<code>video.list</code>, Display API).</li>
+  <li>The numbers are saved once a day into the company's private Google Sheet for reporting. Nothing is posted, edited or deleted on TikTok.</li>
+</ol>
+<p>Only accounts owned by PT Raf Estate and its partner property brands are connected. The tool is not offered to the public.</p>
+
+<nav>
+  <a href="terms.html">Terms of Service</a>
+  <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+<footer>© 2026 PT Raf Estate · Malang, Indonesia · Contact: <span id="kontak">joharproperty3@gmail.com</span></footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connecting TikTok – Tracking Video Raf Estate</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; padding: 40px 16px; color: #202124; line-height: 1.6; background: #fff; text-align: center; }
+  .ok { color: #188038; } .salah { color: #d93025; }
+  img { width: 64px; height: 64px; border-radius: 14px; }
+</style>
+</head>
+<body>
+<img src="icon.jpg" alt="">
+<h1>Tracking Video Raf Estate</h1>
+<p id="pesan">Processing TikTok authorization…</p>
+<script>
+  // Authorization callback (Login Kit redirect URI).
+  // TikTok sends ?code=...&state=... here; this page forwards them to the company's Google Apps Script web app,
+  // which exchanges the code for an access token and stores it privately. Nothing is stored in this website.
+  var WEB_APP_URL = ''; // diisi pada tahap 2 (URL web app Apps Script Tracking Video)
+
+  var q = new URLSearchParams(location.search);
+  var el = document.getElementById('pesan');
+  if (q.get('error')) {
+    el.className = 'salah';
+    el.textContent = 'Authorization was cancelled or failed: ' + (q.get('error_description') || q.get('error')) + '. You can close this page and try again.';
+  } else if (!q.get('code')) {
+    el.textContent = 'This is the authorization page of Tracking Video Raf Estate. Open the connect link from the company Google Sheet to start.';
+  } else if (!WEB_APP_URL) {
+    el.className = 'ok';
+    el.textContent = 'Authorization received (test mode). The connection to the Google Sheet is not configured yet.';
+  } else {
+    el.className = 'ok';
+    el.textContent = 'Authorization received. Saving the connection…';
+    location.replace(WEB_APP_URL + '?aksi=tiktok_callback&code=' + encodeURIComponent(q.get('code')) +
+      '&state=' + encodeURIComponent(q.get('state') || ''));
+  }
+</script>
+</body>
+</html>
